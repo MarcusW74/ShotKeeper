@@ -1,0 +1,311 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/mcityimage"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/team_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:paddingTop="10dp"
+                android:text="Manchester City"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/team_a_scoreA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/goal_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="goalsMade"
+                android:text="Goals Made" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+
+                    android:id="@+id/team_A_shots"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@id/shot_button"
+                    android:layout_toRightOf="@id/shot_button"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="16dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="45sp" />
+
+                <Button
+                    android:id="@+id/shot_button"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="shots"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="Shots on Goal" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/team_A_saved"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@id/saved_goal_button"
+                    android:layout_toRightOf="@id/saved_goal_button"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="16dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="45sp" />
+
+                <Button
+                    android:id="@+id/saved_goal_button"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="savedGoals"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="Goals Saved" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/manu"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:gravity="center_horizontal"
+                android:paddingBottom="16dp"
+                android:paddingTop="10dp"
+                android:text="Manchester United"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/team_a_scoreB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center_horizontal"
+                android:text="0"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <Button
+                android:id="@+id/three_buttonB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="goalsMadeB"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="Goals Made" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/team_B_shots"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@id/two_buttonB"
+                    android:layout_toRightOf="@id/two_buttonB"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="16dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="45sp" />
+
+                <Button
+                    android:id="@+id/two_buttonB"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="shotsB"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="Shots on Goal" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/team_B_saved"
+                    android:layout_width="60dp"
+                    android:layout_height="80dp"
+                    android:layout_toEndOf="@id/saved_goal_buttonB"
+                    android:layout_toRightOf="@id/saved_goal_buttonB"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:paddingBottom="16dp"
+                    android:text="0"
+                    android:textColor="#000000"
+                    android:textSize="45sp" />
+
+                <Button
+                    android:id="@+id/saved_goal_buttonB"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:onClick="savedGoalsB"
+                    android:paddingLeft="24dp"
+                    android:paddingRight="24dp"
+                    android:text="Goals Saved" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:onClick="resetAlla"
+        android:padding="5dp"
+        android:text="Reset All" />
+
+    <Button
+        android:id="@+id/removeShotsOnGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resetA"
+        android:layout_alignStart="@+id/resetA"
+        android:layout_below="@+id/resetA"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:onClick="decrementShotsOnGoalA"
+        android:padding="5dp"
+        android:text="- Shots " />
+
+    <Button
+        android:id="@+id/removeGoalsSavedA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/removeShotsOnGoal"
+        android:layout_alignStart="@+id/removeShotsOnGoal"
+        android:layout_below="@+id/removeShotsOnGoal"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:onClick="decrementGoalsSavedA"
+        android:padding="5dp"
+        android:text="- Saved Goals " />
+
+    <Button
+        android:id="@+id/resetB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/resetA"
+        android:layout_alignBottom="@+id/resetA"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:onClick="resetScoresB"
+        android:padding="5dp"
+        android:text="Reset All" />
+
+    <Button
+        android:id="@+id/removeShotsOnGoalB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/resetB"
+        android:layout_alignStart="@+id/resetB"
+        android:layout_below="@+id/resetB"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:onClick="decrementShotsOnGoalB"
+        android:padding="5dp"
+        android:text="- Shots " />
+
+    <Button
+        android:id="@+id/removeGoalsSavedB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/removeShotsOnGoalB"
+        android:layout_alignStart="@+id/removeShotsOnGoalB"
+        android:layout_below="@+id/removeShotsOnGoalB"
+        android:gravity="center"
+        android:onClick="decrementGoalsSavedB"
+        android:padding="5dp"
+        android:text="- Saved Goals " />
+
+
+</RelativeLayout>
